@@ -8,10 +8,10 @@
 
 import Foundation
 class Adres {
-    var straat: String?
-    var huisnummer: Int?
-    var postcode: Int?
-    var gemeente: String?
+    var straat: String
+    var huisnummer: Int
+    var postcode: Int
+    var gemeente: String
     
     init() {
         self.straat = ""

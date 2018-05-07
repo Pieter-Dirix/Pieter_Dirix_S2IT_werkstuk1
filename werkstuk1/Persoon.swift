@@ -12,12 +12,12 @@ import MapKit
 
 
 class Persoon {
-    var voornaam: String?
-    var naam: String?
+    var voornaam: String
+    var naam: String
     var foto: UIImage
     var adres: Adres
     var gpscoordinaat: CLLocationCoordinate2D
-    var telefoonnummer: Int?
+    var telefoonnummer: String
     
     init() {
         self.voornaam = ""
@@ -25,10 +25,10 @@ class Persoon {
         self.foto = UIImage()
         self.adres = Adres()
         self.gpscoordinaat = CLLocationCoordinate2D()
-        self.telefoonnummer = 0
+        self.telefoonnummer = "0"
     }
     
-    init(voornaam: String, naam: String,foto: UIImage, adres: Adres, gpscoordinaat: CLLocationCoordinate2D, telefoonnummer: Int){
+    init(voornaam: String, naam: String,foto: UIImage, adres: Adres, gpscoordinaat: CLLocationCoordinate2D, telefoonnummer: String){
         self.voornaam = voornaam
         self.naam = naam
         self.foto = foto
