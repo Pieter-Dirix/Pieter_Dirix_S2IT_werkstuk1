@@ -10,14 +10,20 @@ import UIKit
 import MapKit
 class PersoonListViewController: UITableViewController {//50.837623, 5.019277
     var persoon1 = Persoon(voornaam: "Pieter", naam: "Dirix", foto: UIImage(named: "p1")!, adres: Adres(straat: "Droogstraat", huisnummer: 33, postcode: 3350, gemeente: "Linter"), gpscoordinaat: CLLocationCoordinate2D(latitude: 50.837623, longitude: 5.019277), telefoonnummer: "0487310090")
+    //50.836875, 5.018869
+    var persoon2 = Persoon(voornaam: "Peter", naam: "Dircxks", foto: UIImage(named: "p2")!, adres: Adres(straat: "Droogstraat", huisnummer: 1, postcode: 3350, gemeente: "Linter"), gpscoordinaat: CLLocationCoordinate2D(latitude: 50.836875, longitude: 5.018869), telefoonnummer: "0497560483")
+    //50.833949, 5.021031
+    var persoon3 = Persoon(voornaam: "Dieter", naam: "Dierickx", foto: UIImage(named: "p3")!, adres: Adres(straat: "Kwadeplasstraat", huisnummer: 40, postcode: 3350, gemeente: "Linter"), gpscoordinaat: CLLocationCoordinate2D(latitude: 50.833949, longitude: 5.021031), telefoonnummer: "+32465164789")
 
-    var personen:[Persoon]?
+    var personen:[Persoon] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        personen!.append(persoon1)
+        personen.append(persoon1)
+        personen.append(persoon2)
+        personen.append(persoon3)
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -36,16 +42,17 @@ class PersoonListViewController: UITableViewController {//50.837623, 5.019277
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return personen!.count
+        return personen.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-        let tempPersoon = self.personen![indexPath.row]
+        let tempPersoon = self.personen[indexPath.row]
         // Configure the cell...
         cell.textLabel?.text = tempPersoon.voornaam + " " + tempPersoon.naam
         cell.imageView?.image = tempPersoon.foto
+        cell.detailTextLabel?.text = ""
 
         return cell
     }
@@ -96,7 +103,7 @@ class PersoonListViewController: UITableViewController {//50.837623, 5.019277
             
                 let indexPath = self.tableView.indexPathForSelectedRow!
                 
-                nextVC.persoon = self.personen![indexPath.row]
+                nextVC.persoon = self.personen[indexPath.row]
                 nextVC.personen = self.personen
             }
             
