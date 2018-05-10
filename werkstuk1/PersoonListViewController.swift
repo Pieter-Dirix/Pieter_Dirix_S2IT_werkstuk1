@@ -10,15 +10,14 @@ import UIKit
 import MapKit
 class PersoonListViewController: UITableViewController {
     
-    var PersSingle = PersonenSingleton.sharedInstance
+    var PersSingle = PersonenSingleton.shared
     override func viewDidLoad() {
         super.viewDidLoad()
+        PersSingle.personen = [Persoon(voornaam: "Pieter", naam: "Dirix", foto: UIImage(named: "p1")!, adres: Adres(straat: "Droogstraat", huisnummer: 33, postcode: 3350, gemeente: "Linter"), gpscoordinaat: CLLocationCoordinate2D(latitude: 50.837623, longitude: 5.019277), telefoonnummer: "0487310090"), Persoon(voornaam: "Peter", naam: "Dircxks", foto: UIImage(named: "p2")!, adres: Adres(straat: "Droogstraat", huisnummer: 1, postcode: 3350, gemeente: "Linter"), gpscoordinaat: CLLocationCoordinate2D(latitude: 50.836875, longitude: 5.018869), telefoonnummer: "0497560483"), Persoon(voornaam: "Dieter", naam: "Dierickx", foto: UIImage(named: "p3")!, adres: Adres(straat: "Kwadeplasstraat", huisnummer: 40, postcode: 3350, gemeente: "Linter"), gpscoordinaat: CLLocationCoordinate2D(latitude: 50.833949, longitude: 5.021031), telefoonnummer: "+32465164789")]
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        //personen.append(persoon1)
-       // personen.append(persoon2)
-        //personen.append(persoon3)
+       
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }

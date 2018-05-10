@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "werkstuk1/LocatieViewController.swift"
+            timestampString = "547661226.319257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "werkstuk1.LocatieViewController.__deallocating_deinit"
+                  moduleName = "werkstuk1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pieter/Desktop/iOS%20Development/Pieter_Dirix_S2IT_werkstuk1_clone/werkstuk1/LocatieViewController.swift"
+                  timestampString = "547650846.036818"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "werkstuk1.LocatieViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; werkstuk1.LocatieViewController"
+                  moduleName = "werkstuk1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pieter/Desktop/iOS%20Development/Pieter_Dirix_S2IT_werkstuk1_clone/werkstuk1/LocatieViewController.swift"
+                  timestampString = "547650846.040517"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "werkstuk1.LocatieViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; werkstuk1.LocatieViewController"
+                  moduleName = "werkstuk1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pieter/Desktop/iOS%20Development/Pieter_Dirix_S2IT_werkstuk1_clone/werkstuk1/LocatieViewController.swift"
+                  timestampString = "547650846.042707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "werkstuk1.LocatieViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;werkstuk1.LocatieViewController&gt;"
+                  moduleName = "werkstuk1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pieter/Desktop/iOS%20Development/Pieter_Dirix_S2IT_werkstuk1_clone/werkstuk1/LocatieViewController.swift"
+                  timestampString = "547650846.04482"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "werkstuk1.LocatieViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;werkstuk1.LocatieViewController&gt;"
+                  moduleName = "werkstuk1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Pieter/Desktop/iOS%20Development/Pieter_Dirix_S2IT_werkstuk1_clone/werkstuk1/LocatieViewController.swift"
+                  timestampString = "547650846.046945"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

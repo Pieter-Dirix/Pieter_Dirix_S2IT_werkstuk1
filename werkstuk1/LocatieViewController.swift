@@ -10,29 +10,37 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class LocatieViewController: UIViewController {
+class LocatieViewController: UIViewController, MKMapViewDelegate {
+    
     @IBOutlet weak var mapView: MKMapView!
-    
     var locationManager = CLLocationManager()
-    var PersSingle = PersonenSingleton.sharedInstance
-    var annotations:[MKAnnotation] = []
     
+    let persSingle = PersonenSingleton.shared
+    var annotations:[Annotation] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         
-        for pers in PersSingle.personen {
-            let coordinate:CLLocationCoordinate2D = pers.gpscoordinaat
-            let annotation:Annotation = Annotation(coordinate: coordinate)
+        for persoon in persSingle.personen {
+            let naam = persoon.voornaam
+            
+            let coordinate:CLLocationCoordinate2D = persoon.gpscoordinaat
+            let annotation:Annotation = Annotation(coordinate: coordinate, title: naam)
             annotations.append(annotation)
-            self.mapView.selectAnnotation(annotation, animated: true)
         }
         
-        self.mapView.addAnnotations(annotations)
+        mapView.addAnnotations(annotations)
         
-
+        
+        
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -40,6 +48,7 @@ class LocatieViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         let center = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
