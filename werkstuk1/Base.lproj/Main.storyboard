@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OQp-KF-gDN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OQp-KF-gDN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Locaties-->
         <scene sceneID="cGO-nR-BqW">
             <objects>
-                <viewController id="Fv3-OS-qye" sceneMemberID="viewController">
+                <viewController title="Locaties" id="Fv3-OS-qye" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QYZ-qU-fal">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="JQR-y0-PKb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QYG-So-oIl"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="QYG-So-oIl" userLabel="Locaties"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPF-IK-bwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,12 +213,11 @@
             </objects>
             <point key="canvasLocation" x="2792.8000000000002" y="-18.440779610194905"/>
         </scene>
-        <!--Item-->
+        <!--Personen-->
         <scene sceneID="cX5-VE-Vcv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WDm-Ab-1b5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FWA-qn-T0V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MwS-Ac-DKk"/>
+                <navigationController title="Personen" automaticallyAdjustsScrollViewInsets="NO" id="FWA-qn-T0V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="MwS-Ac-DKk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZLB-ze-8H8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -229,6 +228,7 @@
                         <segue destination="NxF-mt-Ofa" kind="relationship" relationship="rootViewController" id="ge9-lJ-bZp"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDm-Ab-1b5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="266" y="-99"/>
         </scene>
@@ -238,6 +238,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OQp-KF-gDN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IK7-It-pEK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
