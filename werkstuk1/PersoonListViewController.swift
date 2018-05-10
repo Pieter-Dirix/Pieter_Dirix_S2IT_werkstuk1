@@ -18,7 +18,7 @@ class PersoonListViewController: UITableViewController {//50.837623, 5.019277
     var personen:[Persoon] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         personen.append(persoon1)
@@ -104,7 +104,6 @@ class PersoonListViewController: UITableViewController {//50.837623, 5.019277
                 let indexPath = self.tableView.indexPathForSelectedRow!
                 
                 nextVC.persoon = self.personen[indexPath.row]
-                nextVC.personen = self.personen
             }
             
         }

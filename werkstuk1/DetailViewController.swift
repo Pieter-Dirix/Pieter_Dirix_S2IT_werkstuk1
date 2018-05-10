@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, MKMapViewDelegate {
     
     var persoon = Persoon()
-    var personen:[Persoon]?
     
     @IBOutlet weak var naamLabel: UILabel!
     @IBOutlet weak var telLabel: UILabel!
     @IBOutlet weak var straatNrLabel: UILabel!
     @IBOutlet weak var postGemeenteLabel: UILabel!
     @IBOutlet weak var imgLabel: UIImageView!
+    @IBOutlet weak var mapView: MKMapView!
     
     
     
@@ -29,9 +31,21 @@ class DetailViewController: UIViewController {
         self.straatNrLabel.text = persoon.adres.straat + " " + String(persoon.adres.huisnummer)
         self.postGemeenteLabel.text = String(persoon.adres.postcode) + " " + persoon.adres.gemeente
         self.imgLabel.image = persoon.foto
-
+        
+        let coordinate:CLLocationCoordinate2D = persoon.gpscoordinaat
+        let annotation:Annotation = Annotation(coordinate: coordinate)
+        
+        self.mapView.addAnnotation(annotation)
+        self.mapView.selectAnnotation(annotation, animated: true)
+        
+        let center = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+        
+        mapView.setRegion(region, animated: true)
         // Do any additional setup after loading the view.
     }
+    
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,14 +53,19 @@ class DetailViewController: UIViewController {
     }
     
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tapImg" {
+            if let nextVC = segue.destination as? ImageViewController {
+                nextVC.img = persoon.foto
+            }
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }
