@@ -19,6 +19,8 @@
 		ABFB7B1820A0892000ACBB1A /* werkstuk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB7B1720A0892000ACBB1A /* werkstuk1UITests.swift */; };
 		ABFB7B2620A08E8C00ACBB1A /* Persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB7B2520A08E8C00ACBB1A /* Persoon.swift */; };
 		ABFB7B2820A0900E00ACBB1A /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB7B2720A0900E00ACBB1A /* Adres.swift */; };
+		F557FD1E20A4642000A6D441 /* PersonenSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557FD1D20A4642000A6D441 /* PersonenSingleton.swift */; };
+		F557FD2020A4668700A6D441 /* LocatieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557FD1F20A4668700A6D441 /* LocatieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		ABFB7B1920A0892000ACBB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABFB7B2520A08E8C00ACBB1A /* Persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
 		ABFB7B2720A0900E00ACBB1A /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
+		F557FD1D20A4642000A6D441 /* PersonenSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonenSingleton.swift; sourceTree = "<group>"; };
+		F557FD1F20A4668700A6D441 /* LocatieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			children = (
 				ABFB7AF720A0892000ACBB1A /* AppDelegate.swift */,
 				ABFB7AFB20A0892000ACBB1A /* Main.storyboard */,
+				F557FD1F20A4668700A6D441 /* LocatieViewController.swift */,
+				F557FD1D20A4642000A6D441 /* PersonenSingleton.swift */,
 				AB28535420A09A3B00EDE939 /* PersoonListViewController.swift */,
 				AB28535620A09A5C00EDE939 /* DetailViewController.swift */,
 				AB3A0ABC20A33E2100F9A806 /* ImageViewController.swift */,
@@ -280,7 +286,9 @@
 				AB3A0ABD20A33E2100F9A806 /* ImageViewController.swift in Sources */,
 				ABFB7B2620A08E8C00ACBB1A /* Persoon.swift in Sources */,
 				AB3A0ABB20A331D300F9A806 /* Annotation.swift in Sources */,
+				F557FD2020A4668700A6D441 /* LocatieViewController.swift in Sources */,
 				AB28535520A09A3B00EDE939 /* PersoonListViewController.swift in Sources */,
+				F557FD1E20A4642000A6D441 /* PersonenSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
