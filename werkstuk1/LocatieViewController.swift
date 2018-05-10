@@ -32,7 +32,8 @@ class LocatieViewController: UIViewController, MKMapViewDelegate {
             annotations.append(annotation)
         }
         
-        mapView.addAnnotations(annotations)
+        self.mapView.addAnnotations(annotations)
+        self.mapView.showAnnotations(self.mapView.annotations, animated: true)
         
         
         
