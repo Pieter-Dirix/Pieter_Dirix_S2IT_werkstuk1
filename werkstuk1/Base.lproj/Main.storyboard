@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="1242" y="2"/>
         </scene>
-        <!--Locaties-->
+        <!--Locatie View Controller-->
         <scene sceneID="9Sp-ZG-F3x">
             <objects>
-                <viewController title="Locaties" id="965-QJ-PyD" customClass="LocatieViewController" customModule="werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="965-QJ-PyD" customClass="LocatieViewController" customModule="werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YzA-Cg-YNQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -59,8 +59,8 @@
 		ABFB7B1920A0892000ACBB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABFB7B2520A08E8C00ACBB1A /* Persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
 		ABFB7B2720A0900E00ACBB1A /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
+		F525B26020A59B57009340D8 /* locatie.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = locatie.gpx; path = ../../locatie.gpx; sourceTree = "<group>"; };
 		F557FD1D20A4642000A6D441 /* PersonenSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonenSingleton.swift; sourceTree = "<group>"; };
-		F568E3E320A47B36004DBF00 /* locatie.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = locatie.gpx; sourceTree = "<group>"; };
 		F568E3E820A47E7A004DBF00 /* LocatieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,7 @@
 		ABFB7AEB20A0891F00ACBB1A = {
 			isa = PBXGroup;
 			children = (
-				F568E3E320A47B36004DBF00 /* locatie.gpx */,
+				F525B26020A59B57009340D8 /* locatie.gpx */,
 				ABFB7AF620A0891F00ACBB1A /* werkstuk1 */,
 				ABFB7B0B20A0892000ACBB1A /* werkstuk1Tests */,
 				ABFB7B1620A0892000ACBB1A /* werkstuk1UITests */,

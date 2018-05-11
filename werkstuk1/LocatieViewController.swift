@@ -25,10 +25,7 @@ class LocatieViewController: UIViewController, MKMapViewDelegate {
         locationManager.startUpdatingLocation()
         
         for persoon in persSingle.personen {
-            let naam = persoon.voornaam
-            
-            let coordinate:CLLocationCoordinate2D = persoon.gpscoordinaat
-            let annotation:Annotation = Annotation(coordinate: coordinate, title: naam)
+            let annotation:Annotation = Annotation(coordinate: persoon.gpscoordinaat, title: persoon.voornaam)
             annotations.append(annotation)
         }
         
@@ -53,7 +50,7 @@ class LocatieViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         let center = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.008, longitudeDelta: 0.008))
         
         mapView.setRegion(region, animated: true)
     }
